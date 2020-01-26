@@ -2,7 +2,7 @@ function [f,g,nonsmooth,Astry,negC]=maxEig(y,pars)
 
 %f(y)=\lam_max(A^*y) 
 %A^*y = Ai{0} + \sum yi*Ai
-%NOTE with C = -Ai{0} we retrieve the standard form of SDP : f(y)=\lam_max(A^*y-C) 
+%NOTE with C = -Ai{1} we retrieve the standard form of SDP : f(y)=\lam_max(A^*y-C) 
 nonsmooth=0;
 n=pars.n;
 Ai = pars.Ai;
